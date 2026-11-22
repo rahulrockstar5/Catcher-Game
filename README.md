@@ -1,29 +1,32 @@
-# 🧺 Emoji Catcher Game
-
-A lightweight, responsive browser mini-game built with vanilla HTML, CSS, and JavaScript. Catch falling emojis to score points, but avoid the bombs!
-
-## 🎮 How to Play
-
-1. Open `index.html` in any web browser.
-2. Click **Play Game** to begin.
-3. Move the basket using:
-   - **Keyboard:** Left (`⬅️`) and Right (`➡️`) arrow keys.
-   - **Mouse / Touch:** Drag or click anywhere across the play field.
-4. **Scoring:**
-   - Catching Good Emojis (`🍎`, `⭐`, `🍕`, etc.): **+10 Points**
-   - Catching Bombs (`💣`): **-5 Points**
-5. Try to score as high as possible before the 30-second timer runs out!
-
-## 🚀 Deployment to GitHub Pages
-
-1. Create a new repository on GitHub.
-2. Upload `index.html`, `style.css`, `script.js`, and `README.md` to the main branch.
-3. Go to **Settings** -> **Pages**.
-4. Set Source to `Deploy from a branch` and select `main`.
-5. Click **Save** — your game URL will be ready in a few moments!
-
-## 🛠️ Built With
-
-* HTML5
-* CSS3 (Flexbox & CSS Variables)
-* JavaScript (DOM Manipulation & RequestAnimationFrame)
+# 🧺 Emoji Catcher
+ 
+A browser arcade game built with vanilla HTML, CSS, and JavaScript (Canvas). Catch the good stuff, dodge the bombs, and chain catches for a bigger score multiplier.
+ 
+## How to play
+ 
+1. Open `index.html` in a browser and click **Play**.
+2. Move the basket with **← →** or **A / D**, or move the mouse / drag your finger.
+3. You have 3 lives. A bomb 💣 costs one life. The game ends at zero.
+4. Every 150 points you level up and things fall faster.
+## Scoring
+ 
+| Item | Effect |
+| --- | --- |
+| 🍎 🍕 🍩 🍔 🎈 | +10 × multiplier |
+| ⭐ | +50 × multiplier |
+| 💣 | -1 life (resets combo) |
+| ❤️ | +1 life (max 5) |
+| 🧲 | Magnet for 8s: pulls good items toward you |
+| 🐢 | Slow-mo for 6s |
+| 🛡️ | Blocks the next bomb |
+ 
+**Combo:** every 5 catches in a row raises the multiplier (up to ×5). Missing a good item or hitting a bomb resets it.
+ 
+## Controls
+ 
+`P` / `Esc` pause · `M` mute · the game also pauses when you switch tabs. Your best score is saved in the browser.
+ 
+## Deploy to GitHub Pages
+ 
+Upload `index.html`, `style.css`, `script.js`, and `README.md`, then go to **Settings → Pages** and deploy from the `main` branch.
+ 
